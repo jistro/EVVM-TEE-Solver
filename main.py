@@ -203,13 +203,13 @@ async def decrypt_endpoint(data: dict):
         if not bank_entry:
             return {"message": "La dirección o alias del banco no es válida o no está registrada", "status": "error"}
 
-        # Encriptar la respuesta usando la llave pública del banco
-        response_message = {"status": "success", "message": "OK", "executed_address": address}
-        response_json = json.dumps(response_message)
+        # Generar una respuesta simple en texto
+        response_message = f"OK: {address}"
 
+        # Encriptar la respuesta usando la llave pública del banco
         public_key = serialization.load_pem_public_key(bank_entry["public_key"].encode("utf-8"))
         encrypted_response = public_key.encrypt(
-            response_json.encode("utf-8"),
+            response_message.encode("utf-8"),
             padding.OAEP(
                 mgf=padding.MGF1(algorithm=hashes.SHA256()),
                 algorithm=hashes.SHA256(),
