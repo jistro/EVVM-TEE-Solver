@@ -1,0 +1,24 @@
+The push refers to repository [docker.io/jistro/my-app]
+9047066b9f73: Preparing
+459711fb8b0e: Preparing
+eb699ac02bea: Preparing
+dca75446291b: Preparing
+c8226cee5a50: Preparing
+d4eb1fe7417b: Preparing
+755063e06eb9: Preparing
+8d4a4dec3291: Preparing
+7fb72a7d1a8e: Preparing
+d4eb1fe7417b: Waiting
+755063e06eb9: Waiting
+8d4a4dec3291: Waiting
+7fb72a7d1a8e: Waiting
+eb699ac02bea: Layer already exists
+c8226cee5a50: Layer already exists
+dca75446291b: Layer already exists
+9047066b9f73: Layer already exists
+459711fb8b0e: Layer already exists
+755063e06eb9: Layer already exists
+d4eb1fe7417b: Layer already exists
+8d4a4dec3291: Layer already exists
+7fb72a7d1a8e: Layer already exists
+latest: digest: sha256:7de521478d52fa174715cd2f31f442d4945953679f7b435b51d3f11d90e52a96 size: 2202

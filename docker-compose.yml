@@ -1,0 +1,9 @@
+services:
+  app:
+    image: jistro/my-app:latest
+    container_name: app
+    ports:
+      - "8000:8000"
+    volumes:
+      - /var/run/tappd.sock:/var/run/tappd.sock
+      - /var/run/dstack.sock:/var/run/dstack.sock

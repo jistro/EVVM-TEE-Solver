@@ -1,0 +1,43 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 274B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3-slim
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 45B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/python:3-slim@sha256:f2fdaec50160418e0c2867ba3e254755edd067171725886d5d303fd7057bbf81
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 65B done
+#5 DONE 0.0s
+
+#6 [4/6] COPY requirements.txt ./
+#6 CACHED
+
+#7 [5/6] RUN pip install -r requirements.txt
+#7 CACHED
+
+#8 [2/6] RUN pip install -U pip setuptools
+#8 CACHED
+
+#9 [3/6] WORKDIR /app
+#9 CACHED
+
+#10 [6/6] COPY main.py ./
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 writing image sha256:31fb556ff0bcae440762d60f941adf11a577df64470c1cae3e9ba174dce1bd4b done
+#11 naming to docker.io/jistro/my-app:latest done
+#11 DONE 0.0s
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
